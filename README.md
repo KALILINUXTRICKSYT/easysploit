@@ -27,7 +27,7 @@ EASYSPLOIT - Metasploit automation
 
 git clone https://github.com/KALILINUXTRICKSYT/easysploit.git
  
-cd easysploit-master
+cd easysploit
 
 bash easysploit.sh
 
