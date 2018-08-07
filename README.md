@@ -6,6 +6,7 @@ EASYSPLOIT - Metasploit automation
  Usage of EASYSPLOIT for attacking targets without prior mutual consent is
  ILLEGAL. Developers are not responsible for any damage caused by this script.
  EASYSPLOIT is intented ONLY FOR EDUCATIONAL PURPOSES!!! STAY LEGAL!!!
+ 
 # Options:
 
 (1) Windows (Create payload and Start listener) 
@@ -23,5 +24,13 @@ EASYSPLOIT - Metasploit automation
 (7) Contact with me - My accounts
 
 # How to run:
-git clone https://github.com/KALILINUXTRICKSYT/easysploit/
-cd 
+
+git clone https://github.com/KALILINUXTRICKSYT/easysploit.git
+ 
+cd easysploit-master
+
+bash easysploit.sh
+
+# Support us:
+
+https://www.patreon.com/kalilinuxtricks
