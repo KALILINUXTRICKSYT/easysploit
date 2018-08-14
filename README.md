@@ -1,5 +1,5 @@
 # EASYSPLOIT
-EASYSPLOIT - Metasploit automation
+EASYSPLOIT v2.1 (Linux) - Metasploit automation
 
 # Desclaimer:
 
@@ -9,19 +9,23 @@ EASYSPLOIT - Metasploit automation
  
 # Options:
 
-(1) Windows (Create payload and Start listener) 
+(1) Windows --> test.exe  
 
-(2) Android (Create payload and Start listener)   
+(2) Android --> test.apk            
 
-(3) Linux (Create payload and Start listener)
+(3) Linux --> test.py
 
-(4) MacOS (Create payload and Start listener)
+(4) MacOS --> test.jar
 
-(5) Exploit Windows 7/2008 x64 (ms17_010_eternalblue)
+(5) Web --> test.php
 
-(6) Exploit Windows Vista/XP/2000/2003 (ms17_010_psexec)  
+(6) Exploit Windows 7/2008 x64 (ms17_010_eternalblue)
 
-(7) Contact with me - My accounts
+(7) Exploit Windows Vista/XP/2000/2003 (ms17_010_psexec)  
+
+(8) Contact with me - My accounts
+
+
 
 # How to run:
 
