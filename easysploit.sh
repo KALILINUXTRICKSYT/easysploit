@@ -34,7 +34,7 @@ service postgresql start
 exe='1'
 apk='2'
 py='3'
-jar='4'
+jar='4' 
 php='5'
 scan='6'
 eternalblue='7'
