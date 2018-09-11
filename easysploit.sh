@@ -29,7 +29,7 @@ echo -e '\e[1;33m
 (8) Exploit Windows Vista/XP/2000/2003 (ms17_010_psexec)  
 (9) Contact with me - My accounts
 '
-
+ 
 service postgresql start
 exe='1'
 apk='2'
