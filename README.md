@@ -35,6 +35,6 @@ cd easysploit
 
 bash easysploit.sh
 
-# Support us:
+# Support us: 
 
 https://www.patreon.com/kalilinuxtricks
