@@ -35,6 +35,12 @@ cd easysploit
 
 bash easysploit.sh
 
+# Video tutorials:
+
+https://www.youtube.com/watch?v=9J479dModb8
+https://www.youtube.com/watch?v=UOUry9ov9rM
+
+
 # Support us: 
 
 https://www.patreon.com/kalilinuxtricks
