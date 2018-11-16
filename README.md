@@ -27,13 +27,13 @@ EASYSPLOIT v1.1 (Linux) - Metasploit automation
 
 (9) Contact with me - My accounts
 
-# How to run:
+# How to install:
 
 git clone https://github.com/KALILINUXTRICKSYT/easysploit.git
  
 cd easysploit
 
-bash easysploit.sh
+bash installer.sh
 
 # Video tutorials:
 
