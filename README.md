@@ -35,6 +35,10 @@ cd easysploit
 
 bash installer.sh
 
+# How to run (after installation):
+
+Type anywhere in your terminal "easysploit".
+
 # Video tutorials:
 
 https://www.youtube.com/watch?v=9J479dModb8
