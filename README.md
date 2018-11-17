@@ -25,7 +25,9 @@ EASYSPLOIT v1.2 (Linux) - Metasploit automation
 
 (8) Exploit Windows Vista/XP/2000/2003 (ms17_010_psexec)  
 
-(9) Contact with me - My accounts
+(9) Exploit Windows with a link (HTA Server)
+
+(10) Contact with me - My accounts
 
 # How to install:
 
