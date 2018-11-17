@@ -1,5 +1,5 @@
 # EASYSPLOIT
-EASYSPLOIT v1.2 (Linux) - Metasploit automation
+EASYSPLOIT v2.1 (Linux) - Metasploit automation
 
 # Desclaimer:
 
