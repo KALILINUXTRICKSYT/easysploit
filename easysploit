@@ -1,8 +1,7 @@
 # easysploit
-clear
 i="0"
 resize -s 25 80
-
+clear
 while [ $i -lt 1 ]
 do
 
