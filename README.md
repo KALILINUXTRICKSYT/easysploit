@@ -21,9 +21,9 @@ EASYSPLOIT v2.1 (Linux) - Metasploit automation
 
 (6) Scan if a target is vulnerable to ms17_010
 
-(7) Exploit Windows 7/2008 x64 (ms17_010_eternalblue)
+(7) Exploit Windows 7/2008 x64 ONLY by IP (ms17_010_eternalblue)
 
-(8) Exploit Windows Vista/XP/2000/2003 (ms17_010_psexec)  
+(8) Exploit Windows Vista/XP/2000/2003 ONLY by IP (ms17_010_psexec)  
 
 (9) Exploit Windows with a link (HTA Server)
 
