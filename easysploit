@@ -6,7 +6,7 @@ resize -s 25 80
 clear
 while [ $i -lt 1 ]
 do
-
+clear
 ip=$(ip addr show wlan0 | awk '/inet / {print $2}' | cut -d/ -f 1)
 
  echo -e '\e[1;33m
