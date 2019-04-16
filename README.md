@@ -1,7 +1,7 @@
 # EasySploit
 EasySploit v3.1 (Linux) - Metasploit automation (EASIER and FASTER than EVER) 
 
-# Desclaimer:
+# Disclaimer:
 
  Usage of EASYSPLOIT for attacking targets without prior mutual consent is
  ILLEGAL. Developers are not responsible for any damage caused by this script.
