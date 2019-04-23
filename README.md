@@ -43,6 +43,8 @@ Type anywhere in your terminal "easysploit".
 
 # Video tutorials:
 
+https://www.youtube.com/watch?v=v3xn9MDmTaY
+
 https://www.youtube.com/watch?v=9J479dModb8
 
 https://www.youtube.com/watch?v=UOUry9ov9rM
