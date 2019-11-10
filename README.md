@@ -23,11 +23,11 @@ EasySploit v4.1 (Linux) - Metasploit automation (EASIER and FASTER than EVER)
 
 (7) Exploit Windows 7/2008 x64 ONLY by IP (ms17_010_eternalblue)
 
-(7r) Enable Remote Desktop (ms17_010_eternalblue)
+(7rd) Enable Remote Desktop (ms17_010_eternalblue)
 
 (8) Exploit Windows Vista/XP/2000/2003 ONLY by IP (ms17_010_psexec) 
 
-(8r) Enable Remote Desktop (ms17_010_psexec)
+(8rd) Enable Remote Desktop (ms17_010_psexec)
 
 (9) Exploit Windows with a link (HTA Server)
 
