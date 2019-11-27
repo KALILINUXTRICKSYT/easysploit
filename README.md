@@ -1,5 +1,5 @@
 # EasySploit
-EasySploit v4.1 (Linux) - Metasploit automation (EASIER and FASTER than EVER) 
+EasySploit v4.2 (Linux) - Metasploit automation (EASIER and FASTER than EVER) 
 
 # Disclaimer:
 
