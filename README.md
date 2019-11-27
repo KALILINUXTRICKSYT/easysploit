@@ -31,7 +31,7 @@ EasySploit v4.1 (Linux) - Metasploit automation (EASIER and FASTER than EVER)
 
 (9) Exploit Windows with a link (HTA Server)
 
-(10) Contact with me - My accounts
+(10) Contact with us - Our accounts
 
 
 # How to install:
