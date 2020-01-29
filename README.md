@@ -40,6 +40,8 @@ git clone https://github.com/KALILINUXTRICKSYT/easysploit.git
  
 cd easysploit
 
+sudo -s
+
 bash installer.sh
 
 # How to run (after installation):
